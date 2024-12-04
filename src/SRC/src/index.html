@@ -11,61 +11,63 @@
   <link rel="stylesheet" href="css/style.css" />
 
 <body>
-  <div class="container">
+ 
     <!--Navbar Section-->
-    <div class="Mynavbar navbar">
-      <div class="left-menu">
-        <a href="#">
-          <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
-          <span style="margin-left: 5px;">
-            <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
-          </span>
-
-        </a>
-        <a href="#">home</a>
-        <a href="#">genres</a>
-        <a href="#">now</a>
-        <a href="#">popular</a>
-        <a href="#">my list</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+      <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+      <span style="margin-left: 5px;">
+      <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
+      </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+      <li class="nav-item"></li>
+        <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Genres</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Popular</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">My List</a>
+        </li>
+      </ul>
+      <form action="features/search_result.html" class="d-flex me-3 " style="margin: 20px 0;">
+        <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="btn btn-outline-secondary" onclick="toggledarkmode()" type="button">
+        <i class="bi bi-brightness-high"></i>
+      </button>
       </div>
+    </nav>
 
-      <div class="right-menu">
-        <form action="features/search_result.html">
-          <input class="searchbar" type="text" placeholder=" Search... ">
-          <button class="submit" type="submit">Search</button>
-        </form>
-        <a href="#">profile</a>
-        <a href="#">profile settings</a>
-        <i class="bi bi-brightness-high" onclick="toggledarkmode()" type="button"></i>
-      </div>
-    </div>
     <!--slider Section-->
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
-      </div>
       <div class="carousel-inner">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
+        </div>
         <div class="carousel-item active custom-item-1">
           <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
-          <div class="carousel-caption ">
-            <p>Description for the first slide.</p>
-          </div>
         </div>
         <!--poster 2 and 3 must changed to the poster of latest movie-->
         <div class="carousel-item custom-item-2">
           <img src="./logs/best_3.png" class="w-100 p-3" alt="Second slide">
-          <div class="carousel-caption ">
-            <p>Description for the second slide.</p>
-          </div>
         </div>
         <div class="carousel-item custom-item-3">
           <img src="./logs/logomain.png" class=" w-100 p-3" alt="Third slide">
-          <div class="carousel-caption ">
-            <p>Description for the third slide.</p>
-          </div>
-        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -201,7 +203,6 @@
       <div><a href="#">Follow us</a></div>
       <div><a href="#">Socials</a></div>
     </footer>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="Javascript/toggle_mode.js"></script>
