@@ -26,17 +26,15 @@ git clone https://github.com/yourusername/movie-haven.git
  ``` bash
 cd movie-haven
 ```
-3. Install the required dependencies:
-```bash
- npm install
+3. You can use git checkout to find the branch needed for the work at hand:
+```bash 
+git checkout <The name of the branch where you want to work>
 ```
-4. npm start:
-```bash
-npm start
+4. You can go live using a live server by following:
+```bash 
+code .
 ```
-Visit `http://localhost:3000` in your browser to view the project.
-
-## Contributing 🤝
+This guarantees that you will work in Visual Studio Code.
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request to suggest improvements or report bugs.
  Here's how you can contribute:
