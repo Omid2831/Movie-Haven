@@ -5,11 +5,31 @@ Welcome to Movie Haven, your ultimate destination for discovering and exploring 
 ## Demo 🎞️
 
 ---
-#Features
-----
-#ideas
+## Features
 
-Hit us up by creating pull requests#WebPage  
+
+## How to Run 🚀
+
+To run the Movie-Haven project on your local machine:
+
+1. Clone the repository:
+```bash 
+git clone https://github.com/yourusername/movie-haven.git
+```
+2. Navigate into the project directory:
+ ``` bash
+cd movie-haven
+```
+3. Install the required dependencies:
+```bash
+ npm install
+```
+4. npm start:
+```bash
+npm start
+```
+
+
 
 ## Contributing
 Contributions are welcome! Submit a pull request to suggest improvements or report bugs.
