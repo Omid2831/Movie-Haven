@@ -92,6 +92,7 @@ body {
 
 .footer div,
 .footer a {
+<<<<<<< HEAD
   margin: 5px;
   color: white;
   text-decoration: none;
@@ -137,3 +138,20 @@ body {
     opacity: 1; 
     transform: scale(1.05);
  }
+=======
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.searchbar{
+    height: 20px;
+    border-radius: 15px;
+}
+.submit{
+    height: 25px;
+    border-radius: 15px;
+    background-color: #5e5e5e;
+    color: white;
+}
+>>>>>>> origin/feature/searchbar
