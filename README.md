@@ -10,7 +10,8 @@ Welcome to Movie Haven, your ultimate destination for discovering and exploring 
 #ideas
 
 Hit us up by creating pull requests#WebPage  
----  
-#Ideas  
+
+## Contributing
+Contributions are welcome! Submit a pull request to suggest improvements or report bugs.
 
 Join us by sharing your creativity through pull requests and issues! 
