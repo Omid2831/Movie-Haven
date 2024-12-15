@@ -3,7 +3,7 @@
 Welcome to Movie Haven, your ultimate destination for discovering and exploring the world of films. This project brings you a visually appealing, interactive homepage that offers a seamless experience for movie enthusiasts, with features tailored to enhance accessibility and comfort.
 
 ## Demo 🎞️
-[![Gameplay Screenshot](capture/pic.png)](capture/Demo.mp4)
+[![Gameplay Screenshot](Logo/demos/vOne/imgVersionOne.png)](Logo/demos/vOne/vidVersionOne.mp4)
 
 > *Click the image above to watch the gameplay video.*
 ---
