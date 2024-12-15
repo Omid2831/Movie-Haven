@@ -92,53 +92,6 @@ body {
 
 .footer div,
 .footer a {
-<<<<<<< HEAD
-  margin: 5px;
-  color: white;
-  text-decoration: none;
-}
-
-
-.items {
-    display: flex;
-    overflow: hidden;
-  
-  }
-  
-  .card-container {
-    position: relative;
-  }
-  
-  .card:hover {
-    background-color: #fff;
-
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 100px;
-    text-align: center;
- 
-    animation: boxcard 0.3s ease-in-out forwards; 
-  }
-  @keyframes boxcard {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.1);
-    }
-  }
-  
-  .card-container:hover .card {
-    opacity: 0.5; 
-  }
-  
-.card:hover {
-    z-index: 1; 
-    opacity: 1; 
-    transform: scale(1.05);
- }
-=======
     margin: 5px;
     color: white;
     text-decoration: none;
@@ -154,4 +107,3 @@ body {
     background-color: #5e5e5e;
     color: white;
 }
->>>>>>> origin/feature/searchbar
