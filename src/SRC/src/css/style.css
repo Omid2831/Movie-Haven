@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.light-mode {
+  background-color: #858383; 
+  color: #333333;
+}
 
 .navbar {
   display: flex;
