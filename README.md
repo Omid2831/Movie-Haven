@@ -4,10 +4,14 @@ Welcome to Movie Haven, your ultimate destination for discovering and exploring 
 
 ## Demo 🎞️
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Gameplay Screenshot](capture/pic.png)](capture/Demo.mp4)
 =======
 [![Gameplay Screenshot](Logo/demos/vOne/imgVersionOne.png)](Logo/demos/vOne/vidVersionOne.mp4)
 >>>>>>> develop
+=======
+[![Gameplay Screenshot](Logo/demos/vOne/imgVersionOne.png)](Logo/demos/vOne/vidVersionOne.mp4)
+>>>>>>> 4ab1b31743efd78b8a305ce3f5b810cb5bf46d6f
 
 > *Click the image above to watch the gameplay video.*
 ---
@@ -27,10 +31,14 @@ To run the Movie-Haven project on your local machine:
 1. Clone the repository:
 ```bash 
 <<<<<<< HEAD
+<<<<<<< HEAD
 git clone https://github.com/yourusername/movie-haven.git
 =======
 git clone https://github.com/Omid2831/Movie-Haven.git
 >>>>>>> develop
+=======
+git clone https://github.com/Omid2831/Movie-Haven.git
+>>>>>>> 4ab1b31743efd78b8a305ce3f5b810cb5bf46d6f
 ```
 2. Navigate into the project directory:
  ``` bash
