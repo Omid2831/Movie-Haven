@@ -3,7 +3,11 @@
 Welcome to Movie Haven, your ultimate destination for discovering and exploring the world of films. This project brings you a visually appealing, interactive homepage that offers a seamless experience for movie enthusiasts, with features tailored to enhance accessibility and comfort.
 
 ## Demo 🎞️
+<<<<<<< HEAD
 [![Gameplay Screenshot](capture/pic.png)](capture/Demo.mp4)
+=======
+[![Gameplay Screenshot](Logo/demos/vOne/imgVersionOne.png)](Logo/demos/vOne/vidVersionOne.mp4)
+>>>>>>> develop
 
 > *Click the image above to watch the gameplay video.*
 ---
@@ -22,7 +26,11 @@ To run the Movie-Haven project on your local machine:
 
 1. Clone the repository:
 ```bash 
+<<<<<<< HEAD
 git clone https://github.com/yourusername/movie-haven.git
+=======
+git clone https://github.com/Omid2831/Movie-Haven.git
+>>>>>>> develop
 ```
 2. Navigate into the project directory:
  ``` bash
