@@ -50,4 +50,4 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 Join us by sharing your creativity through pull requests and issues!
 ---
-Feel free to adjust any parts to fit your project specifics.
+Feel free to adjust any parts to fit your project specifics!
