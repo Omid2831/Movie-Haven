@@ -1,89 +1,108 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: white;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.light-mode {
+  background-color: #858383; 
+  color: #d2d1d1;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #1c1c1c;
+  z-index: 1000;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  transition: color 0.3s;
 }
 
-.navbar .right-menu {
-    display: flex;
-    align-items: center;
+.navbar a:hover {
+  color: #ff4c4c;
 }
 
 .main-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .popular-today {
-    background-color: #282828;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
-
+.popular-today button:hover {
+  background-color: #e43d3d;
+  transform: scale(1.05);
+}
 .popular-today button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff4c4c;
-    color: white;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4c4c;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .popular-today button:hover {
-    background-color: #e43d3d;
+  background-color: #e43d3d;
+  transform: scale(1.05);
 }
 
 .sections {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .section .items {
-    display: flex;
-    overflow-x: auto;
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
 }
 
 .section .items div {
-    flex: 0 0 150px;
-    height: 200px;
-    margin-right: 10px;
-    background-color: #383838;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+  flex: 0 0 150px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #383838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.section .items div:hover {
+  transform: scale(1.05);
+  background-color: #484848;
 }
 
 .footer {
-    background-color: #1c1c1c;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  background-color: #1c1c1c;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer div,
@@ -92,11 +111,24 @@ body {
     color: white;
     text-decoration: none;
 }
-
-.searchbar{
-    height: 20px;
-    border-radius: 15px;
+.footer a:hover {
+  color: #ff4c4c;
 }
+
+/* Custom Scrollbar   i have used copilot to get a bit of help*/
+.section .items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.section .items::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.section .items::-webkit-scrollbar-track {
+  background: #333;
+}
+
 .submit{
     height: 25px;
     border-radius: 15px;
@@ -107,3 +139,4 @@ body {
 .social-buttons{
     width: 50px;
 }
+
