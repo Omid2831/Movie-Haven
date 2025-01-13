@@ -77,12 +77,14 @@ h5 {
   bottom: 10px;
   width: 150px;
   height: 150px;
-  padding: 1em
+  padding: 1em;
+  border-radius: 25px;
 }
 
 /* text in the cards */
 .card_title {
   position: relative;
+  
 }
 
 /* for the titles that are too big */
@@ -194,3 +196,7 @@ h5 {
   object-fit: cover;
 }
 
+/* decoration */
+.text-decoration-none{
+  text-decoration: none; 
+}
