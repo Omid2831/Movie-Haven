@@ -85,6 +85,11 @@ h5 {
   position: relative;
 }
 
+/* The decoration in the card */
+.RemoveDecoration {
+  text-decoration: none;
+}
+
 /* for the titles that are too big */
 .TooBig {
   font-size: x-small;
