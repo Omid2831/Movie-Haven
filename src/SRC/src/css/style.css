@@ -71,6 +71,25 @@ h5 {
   transition: transform 0.3s, background-color 0.3s; 
 }
 
+/* Images in the cards */
+.card_image {
+  position: relative;
+  bottom: 10px;
+  width: 150px;
+  height: 150px;
+  padding: 1em
+}
+
+/* text in the cards */
+.card_title {
+  position: relative;
+}
+
+/* for the titles that are too big */
+.TooBig {
+  font-size: x-small;
+}
+
 .mycarditems:hover {
   transform: scale(1.05); /* Scale up on hover */
   background-color: #484848; /* Change background color on hover */
