@@ -61,7 +61,7 @@ h5 {
 
 /* Card Styles */
 .mycarditems {
-  width: 200px; 
+  width: 600px; 
   height: 100px; 
   background-color: #383838; 
   display: flex; 
@@ -84,7 +84,9 @@ h5 {
 /* text in the cards */
 .card_title {
   position: relative;
-  
+  top: 10px;
+  font-size: 20px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* for the titles that are too big */
@@ -97,10 +99,7 @@ h5 {
   background-color: #484848; /* Change background color on hover */
 }
 
-/* Section Styles */
-.sections {
-  margin-top: 20px;
-}
+
 
 .section {
   margin-bottom: 40px;
@@ -170,19 +169,6 @@ h5 {
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
   display: none;
-}
-
-.section .items::-webkit-scrollbar {
-  height: 8px;
-}
-
-.section .items::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 10px;
-}
-
-.section .items::-webkit-scrollbar-track {
-  background: #333;
 }
 
 /* Carousel Styles */
