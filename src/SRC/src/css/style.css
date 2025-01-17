@@ -199,3 +199,12 @@ h5 {
   object-fit: cover;
 }
 
+/* style for the searchbar */
+#searchbar {
+  border-radius: 15px;
+  width: 30rem;
+}
+/* sorts the right of the menu to the right */
+.right-menu {
+  text-align: right;
+}
