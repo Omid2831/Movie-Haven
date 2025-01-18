@@ -23,6 +23,7 @@ To run the Movie-Haven project on your local machine:
 1. Clone the repository:
 ```bash 
 git clone https://github.com/Omid2831/Movie-Haven.git
+
 ```
 2. Navigate into the project directory:
  ``` bash
@@ -49,4 +50,4 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 Join us by sharing your creativity through pull requests and issues!
 ---
-Feel free to adjust any parts to fit your project specifics.
+Feel free to adjust any parts to fit your project specifics!
