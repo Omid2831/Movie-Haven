@@ -1,7 +1,37 @@
-h2{
+/* 
+headline 
+*/
+h2#headline{
+    display: flex;
+    text-align: center;
     font-size : 48px;
-    color: #121212;
+    color: #fef0ec;
+    border-radius:12px 10px 12px 10px;
     font-family: Heebo,sans-serif;
     line-height: 1.21em;
-    
+    font-weight: 700;
+                padding-inline: 50px;
+                padding-block: 20px;
+                padding: 20px;
+                position: relative;
+                top: 10px;
+                left: 40px;
+}
+
+/*
+headline Image
+*/
+.my-img-headline{
+    position: relative;
+    left: -40px;
+    width: 100%;
+    height: 50%;
+    border-radius: 18px;
+}
+
+/*
+spotlight-nav
+*/
+a{
+    text-decoration: none;
 }
