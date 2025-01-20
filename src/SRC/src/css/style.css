@@ -64,7 +64,7 @@ h5 {
   bottom: 10px;
   width: 150px;
   height: 150px;
-  padding: 1em
+  padding: 1em;
 }
 
 /* text in the cards */
@@ -164,4 +164,10 @@ h5 {
 .carousel-inner img {
   height: 400px;
   object-fit: cover;
+}
+
+.hidebutton {
+  border: none;
+  background-color: transparent;
+  height: 200px;
 }

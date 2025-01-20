@@ -11,45 +11,33 @@
   <link rel="stylesheet" href="css/style.css" />
 
 <body>
- 
+  <div class="container">
     <!--Navbar Section-->
-    <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-      <img src="./logs/logomain.png" alt="Logo" style="height: 40px;">
-      <span style="margin-left: 5px;">
-        <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px;">
-      </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2">
-        <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Genres</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Popular</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">My List</a>
-        </li>
-      </ul>
-      <form class="d-flex m-4" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" >
-        <button class="btn btn-secondary" type="submit">Search</button>
-      </form>
-      <button class="btn btn-outline-secondary ms-2" onclick="toggledarkmode()" type="button">
-        <i class="bi bi-brightness-high"></i>
-      </button>
+    <div class="Mynavbar navbar">
+      <div class="left-menu">
+        <a href="#">
+          <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+          <span style="margin-left: 5px;">
+            <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
+          </span>
+
+        </a>
+        <a href="#">home</a>
+        <a href="#">genres</a>
+        <a href="#">popular</a>
+        <a href="#">my list</a>
       </div>
-    </nav>
+
+      <div class="right-menu">
+        <form action="features/search_result.html">
+          <input class="searchbar" type="text" placeholder=" Search... ">
+          <button class="submit" type="submit">Search</button>
+        </form>
+        <a href="#">profile</a>
+        <a href="#">profile settings</a>
+        <i class="bi bi-brightness-high" onclick="toggledarkmode()" type="button"></i>
+      </div>
+    </div>
     <!--slider Section-->
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -61,6 +49,7 @@
         <div class="carousel-item active custom-item-1">
           <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
           <div class="carousel-caption ">
+
           </div>
         </div>
         <!--poster 2 and 3 must changed to the poster of latest movie-->
@@ -129,7 +118,7 @@
       <h2>Drama</h2>
       <div class="items">
         <div class="card">
-          <a  class="text-decoration-none" href="https://youtu.be/EXeTwQWrcwY?si=QzPKEyh-mt9MjP3O">
+          <a class="text-decoration-none" href="https://youtu.be/EXeTwQWrcwY?si=QzPKEyh-mt9MjP3O">
             <img src="images/The_dark_knight.jpeg" class="card_image">
             <p class="card_title ">The Dark Knigth</p>
           </a>
@@ -141,7 +130,7 @@
           </a>
         </div>
         <div class="card">
-          <a class="text-decoration-none"  href="https://youtu.be/FuojHqfe4Vk?si=0Gf_5FvDgXUO8Clj">
+          <a class="text-decoration-none" href="https://youtu.be/FuojHqfe4Vk?si=0Gf_5FvDgXUO8Clj">
             <img src="images/The_Butler.jpg" class="card_image">
             <p class="card_title ">The Butler</p>
           </a>
@@ -183,10 +172,10 @@
           </a>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/82WW9dVbglI?si=wv1p3S4gSO8VJ10A">
+          <button onclick="showItem()" class="hidebutton">
             <img src="images/Flow.jpg" class="card_image">
             <p class="card_title ">Flow</p>
-          </a>
+          </button>
         </div>
         <div class="card">
           <a class="text-decoration-none" href="https://youtu.be/NJejE1Xv8vw?si=WrGuZfn7WFf5ggGh">
@@ -211,11 +200,12 @@
       <div><a href="#">Follow us</a></div>
       <div><a href="#">Socials</a></div>
     </footer>
-
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="Javascript/toggle_mode.js"></script>
   <script src="Javascript/reloadbar.js"></script>
+  <script src="Javascript/showpopup.js"></script>
 </body>
 
 </html>
