@@ -1,37 +1,61 @@
+/*
+Hiding the navigation bar on the top
+*/
+.Mynavbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /* 
 headline 
 */
-h2#headline{
-    display: flex;
-    text-align: center;
-    font-size : 48px;
-    color: #fef0ec;
-    border-radius:12px 10px 12px 10px;
-    font-family: Heebo,sans-serif;
-    line-height: 1.21em;
-    font-weight: 700;
-                padding-inline: 50px;
-                padding-block: 20px;
-                padding: 20px;
-                position: relative;
-                top: 10px;
-                left: 40px;
+h2#headline {
+  display: flex;
+  text-align: center;
+  font-size: 48px;
+  color: #fef0ec;
+  border-radius: 12px 10px 12px 10px;
+  font-family: Heebo, sans-serif;
+  line-height: 1.21em;
+  font-weight: 700;
+  padding-inline: 50px;
+  padding-block: 20px;
+  padding: 15px;
+  position: relative;
+  top: 10px;
+  left: 40px;
 }
-
+/*
+the deep dive intro
+*/
+h6 {
+  font-size: 18px;
+  color: #730202;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 /*
 headline Image
 */
-.my-img-headline{
-    position: relative;
-    left: -40px;
-    width: 100%;
-    height: 50%;
-    border-radius: 18px;
+.my-img-headline {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-
+/*
+Aside card should be on left side above the main content 
+*/
+div.my-spolight-nav > h3#headline-aside-left {
+  font-size: 30px;
+  color: #730202;
+}
 /*
 spotlight-nav
 */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: #fef0ec;
+  font-size: 20px;
+  font-family: Heebo, sans-serif;
+  font-weight: 700;
 }
