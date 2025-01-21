@@ -8,131 +8,122 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/src/SRC/src/css/style.css"/>
-  <link rel="stylesheet" href="../css/cast.css">
-  
+  <link rel="stylesheet" href="/src/SRC/src/css/style.css" />
+  <link rel="stylesheet" href="../css/cast.css" />
+</head>
+
 <body>
- 
-    <!--Navbar Section-->
-    <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/src/SRC/src/index.html">
+  <!-- Navbar Section -->
+  <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/src/SRC/src/index.html">
       <img src="/src/SRC/src/logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
-      <li class="nav-item"></li>
-        <a class="nav-link" href="#">Profile</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Genres</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Popular</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
       </ul>
-     <form action="../features/search_result.html" class="d-flex me-3 " style="margin: 20px 0;">
-  <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
-  <button class="btn btn-danger" type="submit">Search</button>
-</form>
-<button class="btn btn-secondary" onclick="toggledarkmode()" type="button">
-  <i class="bi bi-brightness-low"></i>
-</button>
-      </div>
-    </nav>
+      <form action="../features/search_result.html" class="d-flex me-3" style="margin: 20px 0;">
+        <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+      <button class="btn btn-secondary" onclick="toggledarkmode()" type="button">
+        <i class="bi bi-brightness-low"></i>
+      </button>
+    </div>
+  </nav>
 
   <main class="container">
-    <div class="container row">
-        <div class="col-2 "></div>
-        <div class="col-8 my-5">
-            <img src="../cast_img/image.png" alt="headline image" class="headline-image offset-md-1 my-img-headline">
-            <h6 class=" text-center position-relative offset-2"> DEEEP DIVE </h6>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8 my-5">
+        <img src="../cast_img/image.png" alt="headline image" class="headline-image offset-md-1 my-img-headline">
+        <h6 class="text-center position-relative offset-2">DEEPEST DIVE</h6>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="spotlight-container row">
+      <div class="col-2">
+        <div class="my-spotlight-nav">
+          <ul>
+            <li><a href="#actors">Actors</a></li>
+            <li><a href="#actress">Actresses</a></li>
+            <li><a href="#directors">Directors</a></li>
+            <li><a href="#producers">Producers</a></li>
+          </ul>
         </div>
-        <div class="col-2"></div>
+      </div>
+
+      <div class="col-8">
+        <h2 id="headline">Spotlight on Talent: Explore the Lives and Careers of Your Favorite Actors and Actresses</h2>
+        <div class="spotlight-description offset-1">
+          <p id="my-sub-title-from-headline" class="text-center"><small>You can catch all seven seasons right now</small></p>
+        </div>
+        <p id="my-paragraph" class="offset-1 text-center">
+          Reinvent Yourself with Younger - A Must-Watch on Netflix
+
+          At Movie Haven, we spotlight stories that inspire, and *Younger* is a comedy series that proves it’s never too late to hit reset. Liza (Sutton Foster) is at a turning point in life. After a divorce leaves her drowning in debt and her daughter moves across the globe, Liza decides to take charge of her future. But starting over in her 40s comes with unique challenges—and a big secret that keeps her on her toes.
+          
+          This hilarious and heartwarming series takes you through Liza’s journey of reinvention as she navigates a new career, friendships, and love, all while redefining what it means to follow your dreams.
+
+          With all seven seasons now streaming on Netflix in the US, *Younger* is waiting for you to explore. Don’t miss this feel-good hit, curated here on Movie Haven—your ultimate destination for entertainment recommendations!
+        </p>
+        <h2 id="sub-title-headline-question">What happens on Younger?</h2>
+        <p id="my-paragraph-2" class="offset-1 text-center">
+          *Younger* is a charming dramedy about reinvention, secrets, and second chances. Liza Miller (Sutton Foster), a recently divorced 40-something, is determined to relaunch her career in New York City's competitive publishing world. But when her age becomes a barrier, a serendipitous meeting with 26-year-old Josh (Nico Tortorella)—who assumes she’s his age—sparks an audacious plan. Encouraged by her quirky best friend Maggie (Debi Mazar), Liza decides to pose as a twentysomething to land an entry-level position at Empirical Press.
+
+          Balancing her fresh start, a budding romance with Josh, and the challenges of keeping her true age a secret, Liza builds meaningful connections, including a close friendship with her ambitious coworker Kelsey (Hilary Duff) and a growing bond with the company’s charismatic executive (Peter Hermann).
+
+          *Younger* is the perfect pick for fans of feel-good series with heartfelt moments, comedic twists, and empowering messages about chasing your dreams—no matter where you are in life. Available now to explore on Movie Haven, your ultimate destination for binge-worthy series and films!
+        </p>
+
+        <div class="spotlight-sections">
+          <section id="actors" class="cast-section">
+            <h2>Actors</h2>
+            <ul>
+              <li>
+                <h3>Actor Name</h3>
+                <p>Bio: Brief description of the actor</p>
+                <p>Notable Works: List of notable movies/TV shows</p>
+              </li>
+              <!-- Add more actors here -->
+            </ul>
+          </section>
+
+          <section id="actress" class="actresses-section">
+            <h2>Actresses</h2>
+            <ul>
+              <li>
+                <h3>Actress Name</h3>
+                <p>Bio: Brief description of the actress</p>
+                <p>Notable Works: List of notable movies/TV shows</p>
+              </li>
+              <!-- Add more actresses here -->
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="col-2"></div>
     </div>
-    
-<div class="spotlight-container row">
-  <div class="col-2">
-    <div class="my-spotlight-nav">
-      <ul>
-        <li><a href="#actors">Actors</a></li>
-        <li><a href="#actress">Actresses</a></li>
-        <li><a href="#directors">Directors</a></li>
-        <li><a href="#producers">Producers</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-8">
-    <h2 id="headline">Spotlight on Talent: Explore the Lives and Careers of Your Favorite Actors and Actresses</h2>
-    <div class="spotlight-description offset-1">
-      <p id="my-sub-title-from-headline" class="text-center"><small>You can catch all seven seasons right now</small></p>
-    </div>
-    <p id="my-paragraph" class="offset-1 text-center">
-      Reinvent Yourself with Younger - A Must-Watch on Netflix
+  </main>
 
-      At Movie Haven, we spotlight stories that inspire, and Younger is a comedy series that proves it’s never too late to hit reset. Liza (Sutton Foster) is at a turning point in life. After a divorce leaves her drowning in debt and her daughter moves across the globe, Liza decides to take charge of her future. But starting over in her 40s comes with unique challenges—and a big secret that keeps her on her toes.
-      
-      This hilarious and heartwarming series takes you through Liza’s journey of reinvention as she navigates a new career, friendships, and love, all while redefining what it means to follow your dreams.
-      
-      With all seven seasons now streaming on Netflix in the US, Younger is waiting for you to explore. Don’t miss this feel-good hit, curated here on Movie Haven—your ultimate destination for entertainment recommendations!
-    </p>
-    <h2 id="sub-title-headline-question">What happens on Younger?</h2>
-    <p id="my-paragraph-2" class="offset-1 text-center">
-      Younger is a charming dramedy about reinvention, secrets, and second chances. Liza Miller (Sutton Foster), a recently divorced 40-something, is determined to relaunch her career in New York City's competitive publishing world. But when her age becomes a barrier, a serendipitous meeting with 26-year-old Josh (Nico Tortorella)—who assumes she’s his age—sparks an audacious plan. Encouraged by her quirky best friend Maggie (Debi Mazar), Liza decides to pose as a twentysomething to land an entry-level position at Empirical Press.
-
-Balancing her fresh start, a budding romance with Josh, and the challenges of keeping her true age a secret, Liza builds meaningful connections, including a close friendship with her ambitious coworker Kelsey (Hilary Duff) and a growing bond with the company’s charismatic executive (Peter Hermann).
-
-Younger is the perfect pick for fans of feel-good series with heartfelt moments, comedic twists, and empowering messages about chasing your dreams—no matter where you are in life. Available now to explore on Movie Haven, your ultimate destination for binge-worthy series and films!
-    </p>
-  <div class="spotlight-sections">
-      <section id="actors" class="cast-section">
-        <h2>Actors</h2>
-        <ul>
-          <li>
-            <h3>Actor Name</h3>
-            <p>Bio: Brief description of the actor</p>
-            <p>Notable Works: List of notable movies/TV shows</p>
-          </li>
-          <!-- Add more actors here -->
-        </ul>
-      </section>
-      <section id="actress" class="actresses-section">
-        <h2>Actresses</h2>
-        <ul>
-          <li>
-            <h3>Actress Name</h3>
-            <p>Bio: Brief description of the actress</p>
-            <p>Notable Works: List of notable movies/TV shows</p>
-          </li>
-          <!-- Add more actresses here -->
-        </ul>
-      </section>
-    </div>
-  </div>
-  <div class="col-2">
-  </div>
-</div>
-</main>
-
-
-
-    <!--Footer Section-->
-    <footer class="footer">
-      <div><a href="index.html" onclick="return alert('*insert terms of service*');">Terms of use</a></div>
-      <div><a href="index.html" onclick="return alert('*insert privacy policy*');">Privacy policy</a></div>
-      <div><a href="index.html" onclick="return alert('*insert cookie settings*');">Cookie settings</a></div>
-      <div><a href="#">Language</a></div>
-      <div><a href="FAQ.html">FAQ</a></div>
-      <div><a href="#">Help Center</a></div>
-      <div><a href="#">Contact us</a></div>
-      <div><a href="#">Follow us</a></div>
-      <div><a href="#">Socials</a></div>
-    </footer>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div><a href="index.html" onclick="return alert('*insert terms of service*');">Terms of use</a></div>
+    <div><a href="index.html" onclick="return alert('*insert privacy policy*');">Privacy policy</a></div>
+    <div><a href="index.html" onclick="return alert('*insert cookie settings*');">Cookie settings</a></div>
+    <div><a href="#">Language</a></div>
+    <div><a href="FAQ.html">FAQ</a></div>
+    <div><a href="#">Help Center</a></div>
+    <div><a href="#">Contact us</a></div>
+    <div><a href="#">Follow us</a></div>
+    <div><a href="#">Socials</a></div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/src/SRC/src/Javascript/toggle_mode.js"></script>
