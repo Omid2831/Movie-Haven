@@ -84,9 +84,14 @@ p#my-sub-title-from-headline{
 /*
 Aside card should be on left side above the main content 
 */
-div.my-spolight-nav > h3#headline-aside-left {
-  font-size: 30px;
-  color: #730202;
+ div.col-2 > div.my-spotlight-nav{
+    position: fixed;
+    top:10%;
+    left: 0;
+    width:250px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 /*
 spotlight-nav
@@ -99,4 +104,14 @@ a {
   font-weight: 700;
 }
 
+a:hover {
+  color: #efc700;
+  transition: color 0.3s ease-in-out;
+}
+/*
+removing the 
+*/
+li{
+  list-style-type: none;
+}
 
