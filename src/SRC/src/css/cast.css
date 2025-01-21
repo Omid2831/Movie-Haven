@@ -91,7 +91,6 @@ Aside card should be on left side above the main content
     width:250px;
     height: 100vh;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 /*
 spotlight-nav
@@ -114,4 +113,39 @@ removing the
 li{
   list-style-type: none;
 }
-
+/*
+my description 
+*/
+p#my-paragraph {
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 155%;
+    margin: 20px 0;
+    white-space: pre-line;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*
+the question of the headline content
+*/
+h2#sub-title-headline-question{
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 100%;
+  white-space: pre-line;
+  font-stretch: ultra-condensed;
+    margin: 20px 0;
+    margin-top: 36px;
+    
+}
+/*
+my answer to the question headline content the second from above 
+*/
+p#my-paragraph-2{
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 155%;
+  margin: 20px 0;
+  white-space: pre-line;
+  font-family: 'Times New Roman', Times, serif;
+}
