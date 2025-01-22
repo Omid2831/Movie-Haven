@@ -8,35 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="container">
-    <!--Navbar Section-->
-    <div class="Mynavbar navbar">
-      <div class="left-menu">
-        <a href="#">
-          <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
-          <span style="margin-left: 5px;">
-            <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
-          </span>
-
-        </a>
-        <a href="#">home</a>
-        <a href="#">genres</a>
-        <a href="#">now</a>
-        <a href="#">popular</a>
-        <a href="#">my list</a>
-      </div>
-
-      <div class="right-menu">
-        <form action="features/search_result.html">
-          <input class="searchbar" type="text" placeholder=" Search... ">
-          <button class="submit" type="submit">Search</button>
-        </form>
-        <a href="#">profile</a>
-        <a href="#">profile settings</a>
-        <i class="bi bi-brightness-high" onclick="toggledarkmode()" type="button"></i>
-      </div>
-    </div>
     <!--slider Section-->
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -112,51 +83,66 @@
         </div>
       </div>
     </div>
-
-            <div class="section">
-                <h2>Drama</h2>
-                <div class="items">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Anime</h2>
-                <div class="items">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                </div>
-            </div>
+    <!--Movies Section Drama -->
+    <div class="section">
+      <h2>Drama</h2>
+      <div class="items">
+        <div class="card">
+          <a  class="text-decoration-none" href="https://youtu.be/EXeTwQWrcwY?si=QzPKEyh-mt9MjP3O">
+            <img src="images/The_dark_knight.jpeg" class="card_image">
+            <p class="card_title ">The Dark Knigth</p>
+          </a>
         </div>
     </div>
-    <div class="footer">
-        <div><a href="#">Terms of use</a></div>
-        <div><a href="#">Privacy policy</a></div>
-        <div><a href="#">Cookie settings</a></div>
-        <div><a href="#">Language</a></div>
-        <div><a href="#">FAQ</a></div>
-        <div><a href="#">Help Center</a></div>
-        <div><a href="#">Contact us</a></div>
-        <div><a href="#">Follow us</a></div>
-        <div><a href="#">Socials</a></div>
+    <!--Movies Section anime -->
+    <div class="section">
+      <h2>Anime</h2>
+      <div class="items">
+        <div class="card">
+          <a class="text-decoration-none" href="https://youtu.be/nfK6UgLra7g?si=xe46tPl8lJ-KQ6Ny">
+            <img src="images/A_silent_voice.jpg" class="card_image">
+            <p class="card_title ">A silent voice</p>
+          </a>
+        </div>
+        <div class="card">
+          <a class="text-decoration-none" href="https://youtu.be/xdxHt1eruNM?si=Wz9ew3mFkodizSPR">
+            <img src="images/Akira.jpg" class="card_image">
+            <p class="card_title ">Akira</p>
+          </a>
+        </div>
+        <div class="card">
+          <a class="text-decoration-none" href="https://youtu.be/UPRqnFnnrr8?si=9ewRItY9apkdxCR-">
+            <img src="images/Jujutsu_Kaisen_0.webp" class="card_image">
+            <p class="card_title ">Jujutsu Kaisen </p>
+          </a>
+        </div>
+        <div class="card">
+          <a class="text-decoration-none" href="https://youtu.be/82WW9dVbglI?si=wv1p3S4gSO8VJ10A">
+            <img src="images/Flow.jpg" class="card_image">
+            <p class="card_title ">Flow</p>
+          </a>
+        </div>
+        <div class="card">
+          <a class="text-decoration-none" href="https://youtu.be/NJejE1Xv8vw?si=WrGuZfn7WFf5ggGh">
+            <img src="images/Mononoke.jpg" class="card_image">
+            <p class="card_title  TooBig">Phantom in the Rain</p>
+          </a>
+        </div>
+      </div>
     </div>
+
+
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div><a href="#">Contact us</a></div>
+    <div><a href="FAQ.html">FAQ</a></div>
+    <div><a href="#">Follow us</a></div>  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Javascript/toggle_mode.js"></script>
+  <script src="Javascript/reloadbar.js"></script>
 </body>
 
 </html>
