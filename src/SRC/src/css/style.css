@@ -212,4 +212,6 @@ h5 {
 #infopage {
   text-align: center;
   padding-bottom: 50rem;
+  padding-left: 0rem;
+  padding-right: 20rem;
 }
