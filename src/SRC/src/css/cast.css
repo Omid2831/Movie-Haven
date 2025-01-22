@@ -341,7 +341,7 @@ p#my-paragraph-3{
 /*
 download 
 */
-.dobtn {
+.mybtn {
   color: purple;
   text-transform: uppercase;
   text-decoration: none;
@@ -356,11 +356,12 @@ download
   overflow: hidden;
 }
 
-.dobtn:hover {
+.mybtn:hover {
   color: rgb(139, 15, 15);
+  transform: scaleX(1.1);
 }
 
-.dobtn::before {
+.mybtn::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -373,6 +374,17 @@ download
   transition: all 1s;
 }
 
-.dobtn:hover::before {
+.mybtn:hover::before {
   width: 160%;
+}
+/*
+the named of the actors movie 
+*/
+#head-handle-actors{
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0;
+    margin: 20px 0;
+    margin-top: 36px;
+
 }
