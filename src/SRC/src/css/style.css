@@ -154,6 +154,36 @@ h5 {
 .footer a:hover {
   color: #ff4c4c;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+/* Custom Scrollbar   i have used copilot to get a bit of help*/
+.section .items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.section .items::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.section .items::-webkit-scrollbar-track {
+  background: #333;
+}
+
+>>>>>>> 390848217584b18903905add9d8d5459d9eb79ac
+.submit{
+    height: 25px;
+    border-radius: 15px;
+    background-color: #5e5e5e;
+    color: white;
+}
+
+.social-buttons{
+    width: 50px;
+<<<<<<< HEAD
+=======
 /* Keyframes for Footer Animation */
 @keyframes slideUp {
   0% {
@@ -185,4 +215,10 @@ h5 {
 /* decoration */
 .text-decoration-none{
   text-decoration: none; 
+>>>>>>> 603b3163265027a364a6076e5ec21991533625f6
 }
+=======
+    border-radius: 10px;
+}
+
+>>>>>>> 390848217584b18903905add9d8d5459d9eb79ac
