@@ -208,3 +208,8 @@ h5 {
   left: 97%;
   z-index: 1001;
 }
+
+#infopage {
+  text-align: center;
+  padding-bottom: 50rem;
+}
