@@ -98,9 +98,6 @@ h5 {
   transform: scale(1.05); /* Scale up on hover */
   background-color: #484848; /* Change background color on hover */
 }
-
-
-
 .section {
   margin-bottom: 40px;
   text-align: center;
@@ -173,13 +170,16 @@ h5 {
 
 /* Carousel Styles */
 #customCarousel {
-  max-width: 500px;
-  margin: auto;
+  margin: 5% 0 ;
+
 }
 
 .carousel-inner img {
-  height: 400px;
-  object-fit: cover;
+  max-height: 500px;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* decoration */
