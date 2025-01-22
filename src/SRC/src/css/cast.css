@@ -18,7 +18,6 @@ h2#headline {
   font-weight: 700;
   padding-inline: 50px;
   padding-block: 20px;
-  padding: 15px;
   position: relative;
   top: 10px;
   left: 40px;
@@ -344,7 +343,7 @@ p#my-paragraph-3{
   font-family: 'Times New Roman', Times, serif;
 }
 /*
-download 
+download buton
 */
 .mybtn {
   color: purple;
@@ -391,5 +390,16 @@ the named of the actors movie
   letter-spacing: 0;
     margin: 20px 0;
     margin-top: 36px;
-
+}
+/*
+make the image of the cast responsive 
+*/
+@media screen and (max-width: 528px) {
+  img#Gerard_Butler,
+  img#Brownyn_Jamen,
+  img#Dean_DeBlois{
+    position: relative;
+    right: 0px;
+    float: right;
+  }
 }
