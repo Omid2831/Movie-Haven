@@ -1,0 +1,65 @@
+.MyHeadLine {
+    font-size: 2.5rem;
+    font-weight: 250;
+    letter-spacing: 2px;
+    color: rgb(255, 210, 88);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Stencil Std, fantasy;
+    position: relative;
+}
+
+.HeadPharagraph {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: normal;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+    font-family: Arial, sans-serif;
+    width: 80%;
+}
+
+.MyHeadBox {
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    position: relative; /* Keep relative, but no sticky */
+}
+
+.MyAccordion {
+    position: relative;
+    top: -20px; 
+    color: rgb(37, 37, 37);
+}
+
+
+.MyAccordion .accordion-button {
+    background-color: #ffd258; 
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffd258; 
+}
+
+.MyAccordion .accordion-button:focus {
+    box-shadow: none; 
+}
+
+.MyAccordion .accordion-button.collapsed {
+    background-color: #ffd258; 
+    border-color: #ffd258; 
+}
+
+.MyAccordion .accordion-item {
+    margin-bottom: 10px; 
+}
+
+
+
