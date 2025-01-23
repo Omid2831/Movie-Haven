@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,8 +19,8 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/src/SRC/src/css/style.css" />
-    <link rel="stylesheet" href="/src/SRC/src/css/faq.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
   </head>
   <body>
     <!--Navbar Section-->
