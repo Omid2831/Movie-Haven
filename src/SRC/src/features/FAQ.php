@@ -1,11 +1,71 @@
 <?php
+
+include('config/config.php');
+
+$dsn = "mysql:host=$dbHost;
+        dbname=$dbName;
+        charset=UTF8";
+
+$pdo = new PDO($dsn, $dbUser, $dbPass);
+
+$sql = "SELECT AnsweredQuestions.Question
+              ,AnsweredQuestions.Answer
+        FROM AnsweredQuestions";
+
+$statement = $pdo->prepare($sql);
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_OBJ);
+
+if (isset($_POST['submit'])){
+
+include('config/config.php');
+
+$dsn = "mysql:host=$dbHost;
+        dbname=$dbName;
+        charset=UTF8";
+
+$pdo = new PDO($dsn, $dbUser, $dbPass);
+
+$sql = "INSERT INTO UnansweredQuestions
+      (
+          Question
+          ,IsActive
+          ,Opmerking
+          ,Datum
+          ,EditDate
+      )
+      VALUES
+      (
+          :question
+          ,1
+          ,NULL
+          ,SYSDATE(6)
+          ,SYSDATE(6)
+      )";
+
+$statement = $pdo->prepare($sql);
+
+$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+$statement->bindValue(':question', $_POST['question'], PDO::PARAM_STR);
+
+$statement->execute();
+
+$display = 'flex';
+
+header('refresh:1;url=FAQ.php');
+
+}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -219,7 +279,24 @@
     </div>
   </div>
 </div>
+    <div class="main-content">
+      
 
+      <?php foreach($result as $x) : ?>
+          <p>Q: <?= $x->Question ?></p>
+          <p>A: <?= $x->Answer ?></p><br><br>
+      <?php endforeach ?>
+
+      <p>Still have an unanswered question? Ask us here!</p>
+      <form action="FAQ.php" method="POST">
+        <input name="question" type="text" id="question" class="form-control" placeholder="Ask us your question!">
+        <button name="submit" type="submit" value="submit">Send</button>
+      </form><br><br>
+      <p>View unanswered questions: (admin only)</p>
+      <input type="text" id="adminPassword" placeholder="Enter admin password">
+      <button id="passwordSubmit">Enter</button>
+
+    </div>
 
     </main>
 
@@ -233,5 +310,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/SRC/src/Javascript/reloadbar.js"></script>
     <script src="/src/SRC/src/Javascript/toggle_mode.js"></script>
+    <script src="../Javascript/adminPassword.js"></script>
+
+    
+    
+
+
+
+    
+
   </body>
 </html>
