@@ -1,0 +1,18 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+/* Typography */
+p,
+h5 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #d2d1d1;
+}
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    display: none;
+  }

@@ -8,73 +8,70 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css" />
-
+  <link rel="stylesheet" href="css/style.css"/>
 <body>
-  <div class="container">
+ 
     <!--Navbar Section-->
-    <div class="Mynavbar navbar">
-      <div class="left-menu">
-        <a href="#">
-          <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
-          <span style="margin-left: 5px;">
-            <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
-          </span>
 
-        </a>
-        <a href="#">home</a>
-        <a href="#">genres</a>
-        <a href="features/info_page.html">info page</a>
-        <a href="#">my list</a>
-      </div>
+    <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark" >
+      <a class="navbar-brand" href="#">
+      <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+      <span style="margin-left: 5px;">
+      <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
+      </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/src/SRC/src/features/About.html">About us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./features/Cast.html">Casting Studio and New Movies</a>
+        </li>
+      </ul>
+      <form action="features/search_result.html" class="d-flex me-3 " style="margin: 20px 0;">
+        <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+      <button class="btn btn-secondary" onclick="toggledarkmode()" type="button">
+        <i class="bi bi-brightness-high"></i>
+      </button>
 
-      <div class="right-menu">
-        <form action="features/search_result.html">
-          <input class="searchbar" type="text" placeholder=" Search... ">
-          <button class="submit" type="submit">Search</button>
-        </form>
-        <a href="#">profile</a>
-        <a href="#">profile settings</a>
-        <i class="bi bi-brightness-high" onclick="toggledarkmode()" type="button"></i>
       </div>
-    </div>
+    </nav>
+
+
     <!--slider Section-->
-    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active custom-item-1">
-          <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
-          <div class="carousel-caption ">
 
-          </div>
-        </div>
-        <!--poster 2 and 3 must changed to the poster of latest movie-->
-        <div class="carousel-item custom-item-2">
-          <img src="./logs/best_3.png" class="w-100 p-3" alt="Second slide">
-          <div class="carousel-caption ">
-
-          </div>
-        </div>
-        <div class="carousel-item custom-item-3">
-          <img src="./logs/logomain.png" class=" w-100 p-3" alt="Third slide">
-          <div class="carousel-caption ">
-
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
     </div>
+    <div class="carousel-item active custom-item-1">
+      <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
+    </div>
+    <!--poster 2 and 3 must changed to the poster of latest movie-->
+    <div class="carousel-item custom-item-2">
+      <img src="./logs/best_3.png" class="w-100 p-3" alt="Second slide">
+    </div>
+    <div class="carousel-item custom-item-3">
+      <img src="./logs/logomain.png" class=" w-100 p-3" alt="Third slide">
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
     <!--Movies Section-->
     <div class="section">
@@ -82,16 +79,23 @@
       <div class="items">
         <div class="card">
           <!-- Remove default card decoration for a cleaner display -->
+
           <img src="images/Inception.jpg" class="card_image">
           <p class="card_title">Inception</p>
           <button onclick="showItem('Inception')" class="hidebutton"></button>
+
         </div>
+
         <div class="card">
+
           <img src="images/Interstellar.jpg" class="card_image">
           <p class="card_title ">Interstellar</p>
           <button onclick="showItem('Interstellar')" class="hidebutton"></button>
+
         </div>
+        
         <div class="card">
+
           <img src="images/Titanic.jpg" class="card_image">
           <p class="card_title ">Titanic</p>
           <button onclick="showItem('Titanic')" class="hidebutton"></button>
@@ -105,14 +109,17 @@
           <img src="images/Baywatch_poster.jpg" class="card_image">
           <p class="card_title ">Baywatch</p>
           <button onclick="showItem('Baywatch')" class="hidebutton"></button>
+
         </div>
       </div>
     </div>
+
 
     <div class="section">
       <h2>Drama</h2>
       <div class="items">
         <div class="card">
+
           <img src="images/The_dark_knight.jpeg" class="card_image">
           <p class="card_title ">The Dark Knight</p>
           <button onclick="showItem('The_dark_knight')" class="hidebutton"></button>
@@ -136,14 +143,17 @@
           <img src="images/The_Shawshank_Redemption.jpg" class="card_image">
           <p class="card_title">The Shawshank Redemption</p>
           <button onclick="showItem('The_Shawshank_Redemption')" class="hidebutton"></button>
+
         </div>
       </div>
-    </div>
 
+    </div>
+    <!--Movies Section anime -->
     <div class="section">
       <h2>Anime</h2>
       <div class="items">
         <div class="card">
+
           <img src="images/A_silent_voice.jpg" class="card_image">
           <p class="card_title ">A silent voice</p>
           <button onclick="showItem('A_silent_voice')" class="hidebutton"></button>
@@ -167,6 +177,7 @@
           <img src="images/Mononoke.jpg" class="card_image">
           <p class="card_title">Phantom in the Rain</p>
           <button onclick="showItem('Mononoke')" class="hidebutton"></button>
+
         </div>
       </div>
     </div>
@@ -343,19 +354,16 @@
 
 
 
-    <!--Footer Section-->
-    <footer class="footer">
-      <div><a href="index.html" onclick="return alert('*insert terms of service*');">Terms of use</a></div>
-      <div><a href="index.html" onclick="return alert('*insert privacy policy*');">Privacy policy</a></div>
-      <div><a href="index.html" onclick="return alert('*insert cookie settings*');">Cookie settings</a></div>
-      <div><a href="#">Language</a></div>
-      <div><a href="FAQ.html">FAQ</a></div>
-      <div><a href="#">Help Center</a></div>
-      <div><a href="#">Contact us</a></div>
-      <div><a href="#">Follow us</a></div>
-      <div><a href="#">Socials</a></div>
-    </footer>
-  </div>
+
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div><a href="feedback.html">Contact us</a></div>
+    <div><a href="features/FAQ.php">FAQ</a></div>
+    <div><a href="features/socials.html">Follow us</a></div>  
+  </footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="Javascript/toggle_mode.js"></script>
