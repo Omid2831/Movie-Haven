@@ -8,73 +8,70 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css" />
-
+  <link rel="stylesheet" href="css/style.css"/>
 <body>
-  <div class="container">
+ 
     <!--Navbar Section-->
-    <div class="Mynavbar navbar">
-      <div class="left-menu">
-        <a href="#">
-          <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
-          <span style="margin-left: 5px;">
-            <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
-          </span>
 
-        </a>
-        <a href="#">home</a>
-        <a href="#">genres</a>
-        <a href="#">popular</a>
-        <a href="#">my list</a>
-      </div>
+    <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark" >
+      <a class="navbar-brand" href="#">
+      <img src="./logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+      <span style="margin-left: 5px;">
+      <img src="./logs/best_3.png" alt="logo's name" style="width: 40px; height: 60px; vertical-align: middle;">
+      </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/src/SRC/src/features/About.html">About us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./features/Cast.html">Casting Studio and New Movies</a>
+        </li>
+      </ul>
+      <form action="features/search_result.html" class="d-flex me-3 " style="margin: 20px 0;">
+        <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+      <button class="btn btn-secondary" onclick="toggledarkmode()" type="button">
+        <i class="bi bi-brightness-high"></i>
+      </button>
 
-      <div class="right-menu">
-        <form action="features/search_result.html">
-          <input class="searchbar" type="text" placeholder=" Search... ">
-          <button class="submit" type="submit">Search</button>
-        </form>
-        <a href="#">profile</a>
-        <a href="#">profile settings</a>
-        <i class="bi bi-brightness-high" onclick="toggledarkmode()" type="button"></i>
       </div>
-    </div>
+    </nav>
+
+
     <!--slider Section-->
-    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active custom-item-1">
-          <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
-          <div class="carousel-caption ">
 
-          </div>
-        </div>
-        <!--poster 2 and 3 must changed to the poster of latest movie-->
-        <div class="carousel-item custom-item-2">
-          <img src="./logs/best_3.png" class="w-100 p-3" alt="Second slide">
-          <div class="carousel-caption ">
-
-          </div>
-        </div>
-        <div class="carousel-item custom-item-3">
-          <img src="./logs/logomain.png" class=" w-100 p-3" alt="Third slide">
-          <div class="carousel-caption ">
-
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
     </div>
+    <div class="carousel-item active custom-item-1">
+      <img src="./logs/best_2.png" class=" w-100 p-3" alt="First slide">
+    </div>
+    <!--poster 2 and 3 must changed to the poster of latest movie-->
+    <div class="carousel-item custom-item-2">
+      <img src="./logs/best_3.png" class="w-100 p-3" alt="Second slide">
+    </div>
+    <div class="carousel-item custom-item-3">
+      <img src="./logs/logomain.png" class=" w-100 p-3" alt="Third slide">
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
     <!--Movies Section-->
     <div class="section">
@@ -82,34 +79,37 @@
       <div class="items">
         <div class="card">
           <!-- Remove default card decoration for a cleaner display -->
-          <a class="text-decoration-none" href="https://youtu.be/YoHD9XEInc0?si=rVMzpREZpxgM9V9k">
-            <img src="images/Inception.jpg" class="card_image">
-            <p class="card_title">Inception</p>
-          </a>
+
+          <img src="images/Inception.jpg" class="card_image">
+          <p class="card_title">Inception</p>
+          <button onclick="showItem('Inception')" class="hidebutton"></button>
+
+        </div>
+
+        <div class="card">
+
+          <img src="images/Interstellar.jpg" class="card_image">
+          <p class="card_title ">Interstellar</p>
+          <button onclick="showItem('Interstellar')" class="hidebutton"></button>
+
+        </div>
+        
+        <div class="card">
+
+          <img src="images/Titanic.jpg" class="card_image">
+          <p class="card_title ">Titanic</p>
+          <button onclick="showItem('Titanic')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/zSWdZVtXT7E?si=E8I2BRDHs4MD7Kpl">
-            <img src="images/Interstellar.jpg" class="card_image">
-            <p class="card_title ">Interstellar</p>
-          </a>
+          <img src="images/Scarface.jpg" class="card_image">
+          <p class="card_title ">Scarface</p>
+          <button onclick="showItem('Scarface')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/CHekzSiZjrY?si=VDO0IDy_GvCVghIZ">
-            <img src="images/Titanic.jpg" class="card_image">
-            <p class="card_title ">Titanic</p>
-          </a>
-        </div>
-        <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/7pQQHnqBa2E?si=OZk602JVbOlR3dJ7">
-            <img src="images/Scarface.jpg" class="card_image">
-            <p class="card_title ">Scarface</p>
-          </a>
-        </div>
-        <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/eyKOgnaf0BU?si=TdtJiKkGzmWSZZhb">
-            <img src="images/Baywatch_poster.jpg" class="card_image">
-            <p class="card_title ">Baywatch</p>
-          </a>
+          <img src="images/Baywatch_poster.jpg" class="card_image">
+          <p class="card_title ">Baywatch</p>
+          <button onclick="showItem('Baywatch')" class="hidebutton"></button>
+
         </div>
       </div>
     </div>
@@ -119,74 +119,242 @@
       <h2>Drama</h2>
       <div class="items">
         <div class="card">
-          <a  class="text-decoration-none" href="https://youtu.be/EXeTwQWrcwY?si=QzPKEyh-mt9MjP3O">
-            <img src="images/The_dark_knight.jpeg" class="card_image">
-            <p class="card_title ">The Dark Knigth</p>
-          </a>
+
+          <img src="images/The_dark_knight.jpeg" class="card_image">
+          <p class="card_title ">The Dark Knight</p>
+          <button onclick="showItem('The_dark_knight')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/5PSNL1qE6VY?si=CwfwQxhE4Sp2FEyZ">
-            <img src="images/Avatar.jpg" class="card_image">
-            <p class="card_title ">Avatar</p>
-          </a>
+          <img src="images/Avatar.jpg" class="card_image">
+          <p class="card_title ">Avatar</p>
+          <button onclick="showItem('Avatar')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none"  href="https://youtu.be/FuojHqfe4Vk?si=0Gf_5FvDgXUO8Clj">
-            <img src="images/The_Butler.jpg" class="card_image">
-            <p class="card_title ">The Butler</p>
-          </a>
+          <img src="images/The_Butler.jpg" class="card_image">
+          <p class="card_title ">The Butler</p>
+          <button onclick="showItem('The_Butler')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/1NJO0jxBtMo?si=ve0U471Rpmy8Y1fE">
-            <img src="images/Braveheart.jpg" class="card_image">
-            <p class="card_title ">Braveheart</p>
-          </a>
+          <img src="images/Braveheart.jpg" class="card_image">
+          <p class="card_title ">Braveheart</p>
+          <button onclick="showItem('Braveheart')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/PLl99DlL6b4?si=0Pefdj5KTjt1Md83">
-            <img src="images/The_Shawshank_Redemption.jpg" class="card_image">
-            <p class="card_title  TooBig">The Shawshank Redemption</p>
-          </a>
+          <img src="images/The_Shawshank_Redemption.jpg" class="card_image">
+          <p class="card_title">The Shawshank Redemption</p>
+          <button onclick="showItem('The_Shawshank_Redemption')" class="hidebutton"></button>
+
         </div>
       </div>
 
-    </div>
 
+    </div>
+    <!--Movies Section anime -->
     <div class="section">
       <h2>Anime</h2>
       <div class="items">
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/nfK6UgLra7g?si=xe46tPl8lJ-KQ6Ny">
-            <img src="images/A_silent_voice.jpg" class="card_image">
-            <p class="card_title ">A silent voice</p>
-          </a>
+
+          <img src="images/A_silent_voice.jpg" class="card_image">
+          <p class="card_title ">A silent voice</p>
+          <button onclick="showItem('A_silent_voice')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/xdxHt1eruNM?si=Wz9ew3mFkodizSPR">
-            <img src="images/Akira.jpg" class="card_image">
-            <p class="card_title ">Akira</p>
-          </a>
+          <img src="images/Your_Name_poster.png" class="card_image">
+          <p class="card_title ">Kimi no Na wa</p>
+          <button onclick="showItem('Kimi_no_Na_wa')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/UPRqnFnnrr8?si=9ewRItY9apkdxCR-">
-            <img src="images/Jujutsu_Kaisen_0.webp" class="card_image">
-            <p class="card_title ">Jujutsu Kaisen </p>
-          </a>
+          <img src="images/Jujutsu_Kaisen_0.webp" class="card_image">
+          <p class="card_title ">Jujutsu Kaisen 0</p>
+          <button onclick="showItem('Jujutsu_Kaisen_0')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/82WW9dVbglI?si=wv1p3S4gSO8VJ10A">
-            <img src="images/Flow.jpg" class="card_image">
-            <p class="card_title ">Flow</p>
-          </a>
+          <img src="images/Flow.jpg" class="card_image">
+          <p class="card_title ">Flow</p>
+          <button onclick="showItem('Flow')" class="hidebutton"></button>
         </div>
         <div class="card">
-          <a class="text-decoration-none" href="https://youtu.be/NJejE1Xv8vw?si=WrGuZfn7WFf5ggGh">
-            <img src="images/Mononoke.jpg" class="card_image">
-            <p class="card_title  TooBig">Phantom in the Rain</p>
-          </a>
+          <img src="images/Mononoke.jpg" class="card_image">
+          <p class="card_title">Phantom in the Rain</p>
+          <button onclick="showItem('Mononoke')" class="hidebutton"></button>
+
         </div>
       </div>
     </div>
+
+    <div id="popUp">
+      <button id="closeButton" onclick="closepopUp()">X</button>
+      <iframe class="Inception popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/YoHD9XEInc0?si=n42QHZiVpW4emFQk" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Inception popUpInfo">
+        Inception follows Dom Cobb, a thief who specializes in stealing secrets from dreams.
+        He is tasked with planting an idea in someone's subconscious through a process called "inception."
+        As Cobb and his team navigate layers of dreams, his personal traumas threaten the mission.
+        The film explores the line between dreams and reality.
+      </p>
+
+      <iframe class="Interstellar popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/zSWdZVtXT7E?si=RJneD0wJeAiZ4Lfq" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Interstellar popUpInfo">
+        Interstellar follows a group of astronauts who travel through a wormhole near Saturn in search of a new
+        habitable planet.
+        The film explores themes of love, time, and the survival of humanity.
+        Interstellar is known for its stunning visuals and emotional storytelling.
+      </p>
+
+      <iframe class="Titanic popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/CHekzSiZjrY?si=VnVmDZXdZPz2kola" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Titanic popUpInfo">
+        Titanic follows the story of Jack and Rose, two passengers on the ill-fated RMS Titanic.
+        The film explores themes of love, class, and tragedy.
+        Titanic is known for its epic romance and historical accuracy.
+      </p>
+
+      <iframe class="Scarface popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/7pQQHnqBa2E?si=9yKpicFHu-1xtScw" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Scarface popUpInfo">
+        Scarface follows Tony Montana, a Cuban immigrant who rises to power in Miami's drug trade.
+        Consumed by ambition and paranoia, his empire spirals into chaos.
+        His rise and fall paint a cautionary tale of power and greed.
+      </p>
+
+      <iframe class="Baywatch popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/eyKOgnaf0BU?si=QoxLars1H2OQaizt" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Baywatch popUpInfo">
+        Baywatch follows a team of lifeguards who protect the beaches of Los Angeles.
+        The film is known for its action, humor, and iconic slow-motion running scenes.
+        Baywatch is a fun and entertaining movie that pays homage to the original TV series.
+      </p>
+
+      <iframe class="The_dark_knight popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/EXeTwQWrcwY?si=o8WwM6ViNoHDFPas" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="The_dark_knight popUpInfo">
+        The Dark Knight follows Batman as he faces the Joker, a criminal mastermind who seeks to create chaos in Gotham
+        City.
+        As the Joker challenges Batman’s morals and pushes him to his limits, Gotham’s fate hangs in the balance.
+        The film explores themes of justice, sacrifice, and the fine line between hero and vigilante.
+      </p>
+
+      <iframe class="Avatar popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/5PSNL1qE6VY?si=KgMp8ngp1YhuTNG1" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Avatar popUpInfo">
+        Avatar follows Jake Sully, a paraplegic marine who takes on a mission to infiltrate the Na'vi people on the
+        planet Pandora.
+        As Jake learns about the Na'vi and their connection to the planet, he must choose between loyalty to humanity
+        and his newfound family.
+        The film is known for its groundbreaking visual effects and environmental message.
+      </p>
+
+      <iframe class="The_Butler popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/FuojHqfe4Vk?si=waa77zNjk_HNAzVM" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="The_Butler popUpInfo">
+        The Butler tells the story of Cecil Gaines, an African American man who serves as a butler in the White House
+        for over three decades.
+        As he witnesses pivotal moments in U.S. history, the film explores his personal struggles, the civil rights
+        movement, and his relationship with his family.
+        It’s a powerful look at race, power, and change in America.
+      </p>
+
+      <iframe class="Braveheart popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/1NJO0jxBtMo?si=GpYZIVeXtYLsJVTZ" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Braveheart popUpInfo">
+        Braveheart follows William Wallace, a Scottish warrior who leads a rebellion against the English king Edward I.
+        As Wallace fights for freedom and independence, he becomes a symbol of hope for his people.
+        The film is known for its epic battles, emotional storytelling, and themes of courage and sacrifice.
+      </p>
+
+      <iframe class="The_Shawshank_Redemption popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/PLl99DlL6b4?si=y4JyuLCn3a6jGa1v" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="The_Shawshank_Redemption popUpInfo">
+        The Shawshank Redemption tells the story of Andy Dufresne, a man wrongfully imprisoned for murder, and his
+        friendship with fellow inmate Red.
+        Over the years, Andy maintains hope and finds a way to escape, demonstrating the power of resilience and the
+        importance of human connection.
+        The film is a profound exploration of hope, justice, and redemption.
+      </p>
+
+      <iframe class="A_silent_voice popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/nfK6UgLra7g?si=l-2QElLBQnzBabLH" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="A_silent_voice popUpInfo">
+        A Silent Voice follows Shoya Ishida, a boy who bullies a deaf classmate, Shoko Nishimiya, in elementary school.
+        Years later, Shoya seeks redemption by reconnecting with Shoko, exploring themes of bullying, guilt,
+        forgiveness, and the impact of human connection.
+        The film is an emotional journey of growth and understanding.
+      </p>
+
+      <iframe class="Kimi_no_Na_wa popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/k4xGqY5IDBE?si=2yVzyA49uTfessbW" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Kimi_no_Na_wa popUpInfo">
+        Kimi no Na wa is a 2016 Japanese animated film directed by Makoto Shinkai. The story follows two
+        teenagers, Mitsuha and Taki, who mysteriously swap bodies across time and space. As they try to navigate each
+        other's lives, they develop a deep connection, despite never having met. The film explores themes of love, fate,
+        and memory, all while featuring stunning animation and a poignant soundtrack. Ultimately, it’s a tale about the
+        unbreakable bond between the two, even when separated by time and distance.
+      </p>
+
+
+      <iframe class="Jujutsu_Kaisen_0 popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/UPRqnFnnrr8?si=uc6d-De_yYhWVCMP" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Jujutsu_Kaisen_0 popUpInfo">
+        Jujutsu Kaisen 0 follows Yuta Okkotsu, a high school student who gains cursed powers after a tragic event.
+        He enrolls in the Tokyo Jujutsu High School to learn how to control his powers and fight curses.
+        The film is a prequel to the Jujutsu Kaisen anime series and explores themes of friendship, loss, and the battle
+        between good and evil.
+      </p>
+
+       <iframe class="Flow popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/82WW9dVbglI?si=kwIvpXfcELgv5wmf" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Flow popUpInfo">
+        Flow follows a group of friends who discover a mysterious power that allows them to manipulate time.
+        As they experiment with their abilities, they uncover dark secrets and face dangerous consequences.
+        The film is a thrilling sci-fi adventure that explores the consequences of playing with time.
+      </p>
+
+      <iframe class=" Princess Mononoke popUpInfo" width="560" height="315"
+        src="https://www.youtube.com/embed/NJejE1Xv8vw?si=t5GMaWJQy54hTfsf" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Mononoke popUpInfo">
+        Princess Mononoke tells the story of Ashitaka, a young prince who is cursed by a boar demon and embarks on a
+        quest to find a cure.
+        Along the way, he encounters Princess Mononoke, a human raised by wolves, and is caught in the conflict between
+        nature spirits and human industrialization.
+        The film explores themes of environmentalism, the consequences of human progress, and the balance between nature
+        and civilization.
+      </p>
+    </div>
+
+
+
 
 
 
@@ -198,9 +366,11 @@
     </footer>
   </div>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="Javascript/toggle_mode.js"></script>
   <script src="Javascript/reloadbar.js"></script>
+  <script src="Javascript/showpopup.js"></script>
 </body>
 
 </html>
