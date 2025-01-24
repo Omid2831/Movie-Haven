@@ -1,0 +1,5 @@
+# Ignore the db folder and its contents
+/features/db/
+
+# Ignore the config folder and its contents
+/features/config/
