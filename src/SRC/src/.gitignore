@@ -1,5 +1,3 @@
-# Ignore the db folder and its contents
+# Ignore the db and config folders and their contents
 /src/SRC/src/features/db/*
-
-# Ignore the config folder and its contents
 /src/SRC/src/features/config/*
