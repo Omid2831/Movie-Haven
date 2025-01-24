@@ -1,0 +1,99 @@
+.MyLogo {
+    position: relative;
+    bottom: 500px;
+    left: 30%;
+}
+
+
+.MyInfoBox,
+.WhatWeOfferBox {
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 60px; 
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 0; 
+}
+
+
+.AboutUsTitle,
+.WhatWeOffer {
+    font-family: 'Times', 'Times New Roman', serif;
+    line-height: 1.5;
+    font-size: 2em; 
+    color: #ffd258; 
+    margin-bottom: 20px;
+    
+}
+
+.AboutUsParagraph,
+.WhatWeOfferParagraph1,
+.WhatWeOfferParagraph2,
+.WhatWeOfferParagraph3 {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    width: 90%;
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+
+.WhatWeOfferParagraph1,
+.WhatWeOfferParagraph2,
+.WhatWeOfferParagraph3 {
+    font-size: 1em; 
+    margin-bottom: 20px; 
+}
+
+
+.MyInfoBox,
+.WhatWeOfferBox {
+    margin-top: 20px; /* Adjust this value as needed */
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+
+.footer {
+    position: relative; /* Change to relative or fixed */
+    width: 100%;
+    bottom: 0; /* Adjust this value as needed */
+    background-color: #333; 
+    padding: 20px 0; 
+    text-align: center; 
+    color: white; 
+}
+
+.footer div {
+    margin: 10px 0; 
+}
+
+.footer a {
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+.myfrequently-asked-questions-about-us {
+    position: relative;
+    bottom: 0; /* Adjust this value as needed */
+}
+@media screen and (max-width: 768px) {
+    .MyInfoBox,
+    .WhatWeOfferBox {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
+    }
+}

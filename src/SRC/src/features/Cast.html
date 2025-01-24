@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Page Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/src/SRC/src/css/style.css" />
+  <link rel="stylesheet" href="../css/cast.css" />
+  <link rel="stylesheet" href="../css/FAQ.css" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">
+      <img src="/src/SRC/src/logs/logomain.png" alt="Logo" style="height: 40px; vertical-align: middle;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+      </ul>
+      <form action="../features/search_result.html" class="d-flex me-3" style="margin: 20px 0;">
+        <input class="form-control me-auto" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+      <button class="btn btn-secondary" onclick="toggledarkmode()" type="button">
+        <i class="bi bi-brightness-low"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!--Aside bar -->
+    <div class="spotlight-container row">
+      <div class="col-2">
+        <aside class="my-spotlight-nav">
+          <ul>
+            <li><a href="#actors">Actors</a></li>
+            <li><a href="#actress">Actresses</a></li>
+            <li><a href="#directors">Directors</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="col-8">
+        <!-- Spotlight Image first image-->
+        <img src="../cast_img/Dragon.png" alt="this is the image of the cast" class="img-fluid">
+        <!-- Spotlight Description and its headline -->
+        <h2 id="sub-title-headline">Spotlight on Talent: Explore the Lives and Careers of Your Favorite Actors and Actresses</h2>
+        <div class="spotlight-description">
+          <p id="my-sub-title-from-headline" class="text-center"><small>Discover the stars behind the scenes</small></p>
+        </div>
+        <p id="my-paragraph" class="offset-1 text-center">
+          At Movie Haven, we bring you closer to the stars you love. Dive deep into the lives and careers of your favorite actors and actresses. Learn about their journey, notable works, and the roles that made them famous. Whether you're a fan of action-packed blockbusters, heartwarming dramas, or thrilling adventures, you'll find all the information you need right here.
+
+          Stay updated with the latest news, interviews, and behind-the-scenes stories. Get to know the people who bring your favorite characters to life and discover new talents that are making waves in the industry. Movie Haven is your ultimate destination for all things related to the world of cinema and television. Don't miss out on the chance to explore and celebrate the incredible talent that makes your viewing experience unforgettable.
+        </p>
+          <!--Spotlight Image second picture-->
+          <img src="/src/SRC/src/cast_img/hicup.png" alt="this is the image of the cast" class="img-fluid">
+        <h2 id="sub-title-headline">What happens in Train Your Dragon 2025?</h2>
+        <p id="my-paragraph-2" class="offset-1 text-center">
+          *Train Your Dragon 2025* is an epic continuation of the beloved franchise, bringing new adventures and challenges. Set in a world where dragons and humans coexist in harmony, the story follows Hiccup and Toothless as they face a new threat that endangers their peaceful way of life. With stunning visuals and a captivating storyline, this cinematic masterpiece explores themes of friendship, bravery, and the unbreakable bond between humans and dragons.
+
+          Join Hiccup, Astrid, and their friends as they embark on a thrilling journey to protect their home and discover new dragon species. *Train Your Dragon 2025* promises to be a heartwarming and action-packed experience for fans of all ages. Don't miss this exciting chapter, available now on Movie Haven, your ultimate destination for the latest and greatest in entertainment!
+        </p>
+        <img src="/src/SRC/src/cast_img/DragonAndHicup.png" alt="this is the image of the cast" class="img-fluid">
+        <!--When is coming ?-->
+        <h2 id="sub-title-headline">When is Train your Dragon coming back?</h2>
+        <p >You can stream Train Your Dragon right now on 
+          <span>M</span><span>o</span><span>v</span><span>i</span><span>e</span> <span>h</span><span>a</span><span>v</span><span>e</span><span>n</span>
+        </p>
+        <iframe 
+              src="https://www.youtube.com/embed/JfmYkC7DQIQ" 
+              style="width: 100%; height: 450px; border: none;" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
+        <!--Where was it filmed?-->
+        <h2 id="sub-title-headline">WHERE WAS TRAIN YOUR DRAGON FILMED?</h2>
+        <p id="my-paragraph-3" class="offset-1 text-center">
+          The live-action adaptation of "How to Train Your Dragon,"
+          set for release on June 13, 2025, was primarily filmed in Northern Ireland.
+          Key locations included Belfast, where studio work was conducted at Titanic Studios 
+          and Belfast Harbour Studios, as well as on-location shoots in Tollymore Forest Park, County Down. 
+           Additionally, some filming took place in Los Angeles, California.
+          </p>
+          <!--Head image-->
+        <img src="/src/SRC/src/cast_img/dragon_viewpoint.png" alt="this the dragon the viewpoint of the cast" class="img-fluid">
+        <hr>
+            <!-- Popular Now Section -->
+            <div class=" my-5">
+              <h2 id="popular-now" class="text-center">POPULAR NOW</h2>
+              <div class="article text-center">
+              <img src="../images/Flow.jpg" alt="Article Image" class="img-fluid mb-3">
+              <h3>Category: ANIME</h3>
+              <p>Discover the fascinating world of anime with our in-depth articles and reviews. From classic series to the latest releases, we explore the stories, characters, and artistry that make anime a beloved genre worldwide.</p>
+              <!--Button-->
+              <button class="mybtn" id="download" onclick="downloadImage()">download</button>
+                <button class="mybtn"><a href="/src/SRC/src/index.html" style="color: inherit; text-decoration: none;">Watch it here</a></button>
+              </div>
+            </div>
+            <hr>
+            <!-- Spotlight Sections and the cast -->
+            <div class="spotlight-sections my-5">
+              <!-- Actors Section -->
+              <section id="actors" class="cast-section mb-5">
+              <h2 id="head-handle-actors" class="text-center">Actors</h2>
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <img src="/src/SRC/src/actors_img/Mason _Thames.png" alt="this is the main character of the cast" class="img-fluid">
+                <h3 id="head-handle-actors">Mason Thames</h3>
+                <p id="my-paragraph-3" class="offset-1 text-center"><mark>Biography:</mark><br> Mason Thames is a rising star in Hollywood, known for his captivating performances and versatility. He gained widespread recognition for his role in the critically acclaimed film "The Black Phone," where he showcased his exceptional acting skills. With a promising career ahead, Mason continues to impress audiences with his dedication and talent.</p>
+                <p id="my-paragraph-3" class="offset-1 text-center"><mark>Notable Works:</mark><br>Mason Thames, at 17, is already a rising star. He recently starred in "The Black Phone" with Ethan Hawke, directed by Scott Derrickson. He also filmed the lead in "How to Train Your Dragon" and starred in Movie Haven's exclusive "Incoming". Thames will appear in "Monster Summer" alongside Mel Gibson, directed by David Henrie.
+                  Starting at 11, Thames began acting after touring with a ballet company. He had roles in Movie haven's "For All Mankind" and was cast in the series "Evel". Represented by WME and Brillstein Entertainment Partners, Thames is making a name for himself in the industry.</p>
+                </li>
+                <li class="mb-4">
+                  <img id="Gerard_Butler" src="/src/SRC/src/actors_img/Gerard_Butler.png" alt="this is the father of Mason Thames" class="img-fluid offset-2">
+                <h3 id="head-handle-actors">Gerard Butler</h3>
+                <p id="my-paragraph-3" class="offset-1 text-center"><mark>Biography:</mark><br> Gerard Butler is a renowned Scottish actor and film producer, known for his dynamic roles and commanding screen presence. He gained international fame for his portrayal of King Leonidas in the epic film "300." With a career spanning over two decades, Butler has showcased his versatility in a wide range of genres, from action-packed blockbusters to heartfelt dramas.</p>
+                <p id="my-paragraph-3" class="offset-1 text-center"><mark>Notable Works:</mark><br> Gerard Butler's journey in the entertainment industry began with a law degree, but his passion for acting led him to the stage and eventually to Hollywood. He has starred in numerous successful films, including "The Phantom of the Opera," "Olympus Has Fallen," and "How to Train Your Dragon." Butler's dedication to his craft and his ability to embody diverse characters have made him a beloved figure in the film industry.</p>
+                </li></li>
+                <!-- Add more actors here -->
+              </ul>
+              </section>
+              <!-- Actresses Section -->
+              <section id="actress" class="cast-section mb-5">
+                <h2 id="head-handle-actors" class="text-center">Actresses</h2>
+                <ul class="list-unstyled">
+                  <li class="mb-4">
+                    <img src="/src/SRC/src/actreses_img/nico_parker.png" alt="this is the main character of the cast" class="img-fluid">
+                  <h3 id="head-handle-actors">Nico Parker</h3>
+                  <p id="my-paragraph-3" class="offset-1 text-center"><mark>Biography:</mark><br> Nico Parker is a talented young actress known for her impressive performances and natural acting ability. She made her film debut in Tim Burton's live-action adaptation of "Dumbo," where she played the role of Milly Farrier. Born to actress Thandiwe Newton and director Ol Parker, Nico has quickly made a name for herself in the entertainment industry.</p>
+                  <p id="my-paragraph-3" class="offset-1 text-center"><mark>Notable Works:</mark><br> Nico Parker's notable works include her debut role in "Dumbo" (2019), where she received critical acclaim for her performance. She also starred in the Movie Haven exclusive series "The Third Day" (2020) alongside Jude Law and Naomie Harris. Additionally, she played a significant role in "Train Your Dragon 2025," further establishing her as one of the promising young talents in Hollywood.</p>
+                  </li>
+                  <li class="mb-4">
+                    <img id="Brownyn_james" src="/src/SRC/src/actreses_img/Brownyn_james.png" alt="this is the father of Mason Thames" class="img-fluid " style="position: relative; left:25%;">
+                  <h3 id="head-handle-actors">Brownyn James</h3>
+                  <p id="my-paragraph-3" class="offset-1 text-center"><mark>Biography:</mark><br> Gerard Butler is a renowned Scottish actor and film producer, known for his dynamic roles and commanding screen presence. He gained international fame for his portrayal of King Leonidas in the epic film "300." With a career spanning over two decades, Butler has showcased his versatility in a wide range of genres, from action-packed blockbusters to heartfelt dramas.</p>
+                  <p id="my-paragraph-3" class="offset-1 text-center"><mark>Notable Works:</mark><br> Gerard Butler's journey in the entertainment industry began with a law degree, but his passion for acting led him to the stage and eventually to Hollywood. He has starred in numerous successful films, including "The Phantom of the Opera," "Olympus Has Fallen," and "How to Train Your Dragon." Butler's dedication to his craft and his ability to embody diverse characters have made him a beloved figure in the film industry.</p>
+                  </li></li>
+                  <!-- Add more actors here -->
+                </ul>
+                </section>
+              <!-- Director of the movie Section -->
+              <section id="directors" class="cast-section mb-5">
+                <h2 id="head-handle-actors" class="text-center">Directors</h2>
+                <ul class="list-unstyled">
+                  <li class="mb-4">
+                    <img id="DeanDeBlois" src="/src/SRC/src/director_image/Director.png" alt="this is the main character of the cast" class="img-fluid" style="position: relative; left:25%;"> 
+                    <h3 id="head-handle-actors">Dean DeBlois</h3>
+                    <p id="my-paragraph-3" class="offset-1 text-center"><mark>Biography:</mark><br>Dean DeBlois is a Canadian film director, producer, screenwriter, and editor. He is best known for co-writing and co-directing the animated feature films "Lilo & Stitch" and the "How to Train Your Dragon" trilogy.</p>
+                    <p id="my-paragraph-3" class="offset-1 text-center"><mark>Notable Works:</mark><br> "Lilo & Stitch", "How to Train Your Dragon", "How to Train Your Dragon 2", "How to Train Your Dragon: The Hidden World"</p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+  </main>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div><a href="feedback_form.html">Contact us</a></div>
+    <div><a href="FAQ.php">FAQ</a></div>
+    <div><a href="socials.html">Follow us</a></div>  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/SRC/src/Javascript/toggle_mode.js"></script>
+  <script src="/src/SRC/src/Javascript/reloadbar.js"></script>
+  <script src="/src/SRC/src/Javascript/download.js"></script>
+</body>
+</html>
