@@ -81,11 +81,12 @@ header('refresh:1;url=FAQ.php');
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/cast.css" />
   </head>
   <body>
     <!--Navbar Section-->
     <nav class="navbar Mynavbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img
           src="/src/SRC/src/logs/logomain.png"
           alt="Logo"
@@ -302,8 +303,8 @@ header('refresh:1;url=FAQ.php');
 
            <!-- Footer Section -->
            <footer class="MyFooter footer">
-            <div><a href="#">Contact us</a></div>
-            <div><a href="#">Follow us</a></div>
+            <div><a href="feedback_form.html">Contact us</a></div>
+            <div><a href="socials.html">Follow us</a></div>
           </footer>
 
     <!-- Bootstrap JS (necessary for interactive components like the accordion) -->
