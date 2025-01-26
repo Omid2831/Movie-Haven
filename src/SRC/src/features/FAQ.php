@@ -19,7 +19,6 @@ $result = $statement->fetchAll(PDO::FETCH_OBJ);
 if (isset($_POST['submit'])){
 
 include('config/config.php');
-
 $dsn = "mysql:host=$dbHost;
         dbname=$dbName;
         charset=UTF8";
