@@ -6,7 +6,7 @@
 }
 .MyInfoBox,
 .WhatWeOfferBox {
-    max-height: 800px;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +16,7 @@
     padding: 10px 20px;
     margin-top: 60px; 
     margin-bottom: 50px;
-    position: relative;
-    bottom: 0; 
+    
 }
 
 
@@ -59,9 +58,7 @@
 
 
 .footer {
-    position: relative; /* Change to relative or fixed */
-    width: 100%;
-    bottom: 0; /* Adjust this value as needed */
+
     background-color: #333; 
     padding: 20px 0; 
     text-align: center; 
