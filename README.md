@@ -1,18 +1,15 @@
-**Modern README File with Auto Link Scrolling**
-
-```markdown
 # Movie-Haven 🎥🎥🎥
 
 [![Movie-Haven](src/SRC/src/logs/vOne/imgVersionOne.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 **Your Ultimate Destination for Movie Enthusiasts**
 
-Movie-Haven is a visually appealing, interactive homepage that offers a seamless experience for movie enthusiasts. With features tailored to enhance accessibility and comfort, our platform is perfect for discovering and exploring the world of films.
+Movie-Haven is a visually stunning, interactive homepage that offers a seamless experience for movie enthusiasts. With features tailored to enhance accessibility and comfort, our platform is perfect for discovering and exploring the world of films.
 
 ## Table of Contents
 
 * [Features](#features)
-* [How to Run](#how-to-run)
+* [Getting Started](#getting-started)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgments](#acknowledgments)
@@ -27,7 +24,7 @@ Movie-Haven is a visually appealing, interactive homepage that offers a seamless
 * **Community Ratings**: Rate movies and share your thoughts, helping other users discover popular films or hidden gems.
 * **Pop-up Information**: Click on a movie to view more information, including a brief summary, cast, and ratings.
 
-## How to Run
+## Getting Started
 
 To run the Movie-Haven project on your local machine:
 
@@ -39,15 +36,15 @@ git clone https://github.com/Omid2831/Movie-Haven.git
 ```bash
 cd movie-haven
 ```
-3. You can use git checkout to find the branch needed for the work at hand:
+3. Install dependencies:
 ```bash
-git checkout <The name of the branch where you want to work>
+npm install
 ```
-4. You can go live using a live server by following:
+4. Start the development server:
 ```bash
-code .
+npm start
 ```
-This guarantees that you will work in Visual Studio Code.
+5. Open your browser and navigate to `http://localhost:3000`
 
 ## Contributing
 
@@ -81,8 +78,18 @@ If you have any questions or need help with the project, feel free to reach out 
 
 This README file uses auto link scrolling to navigate to different sections of the page. Simply click on a link in the table of contents to scroll to that section.
 
-```
+---
 
-Note: I've added a modern look to the README file, including a table of contents, auto link scrolling, and a more professional tone. I've also reformatted the text to make it more readable. Let me know if you need any further changes!
+**Changelog**
 
-Also, I've added a link to the YouTube video in the top section, and I've used a more modern way of writing the links in the table of contents.
+* v1.0.0: Initial release
+* v1.1.0: Added auto link scrolling feature
+* v1.2.0: Improved responsive design and UI components
+
+---
+
+**Roadmap**
+
+* v2.0.0: Implement user authentication and authorization
+* v2.1.0: Add support for multiple languages
+* v2.2.0: Improve performance and optimize code
