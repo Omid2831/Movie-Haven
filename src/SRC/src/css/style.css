@@ -1,37 +1,13 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(15, 12, 12);
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease-in-out;
 }
-body.dark-mode {
-  animation-name: dark-mode;
-}
 
-body.light-mode {
-  animation-name: light-mode;
-}
-
-@keyframes dark-mode {
-  from {
-    background-color: #fff;
-  }
-  to {
-    background-color: #121212;
-  }
-}
-
-@keyframes light-mode {
-  from {
-    background-color: #121212;
-  }
-  to {
-    background-color: #fff;
-  }
-}
 /* Typography */
 p,
 h5 {
