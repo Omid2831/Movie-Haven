@@ -1,9 +1,10 @@
 ---
-name: "📌 Task"
-about: "Create a new task, feature, or refactor request"
+name: "\U0001F4CC Task"
+about: Create a new task, feature, or refactor request
 title: "[TASK] "
-labels: ["task", "enhancement"]
-assignees: []
+labels: enhancement
+assignees: ''
+
 ---
 
 ## ✨ **Description**  
@@ -28,7 +29,4 @@ assignees: []
 - **Priority:** 
 - **Estimated Time:**  
 
-## 📋 **Task Checklist**  
-
-
-
+## 📋 **Task Checklist**
