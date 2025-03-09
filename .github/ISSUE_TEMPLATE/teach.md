@@ -1,7 +1,7 @@
-name: "👨‍🏫 Teach"
-about: "Create a new teaching request"
-title: "[TEACH] "
-labels: ["teach", "documentation"]
+title: "[TEACH]"
+---
+name: "📌 Task"
+about: "Create a new task, feature, or refactor request"
 assignees: []
 ---
 
