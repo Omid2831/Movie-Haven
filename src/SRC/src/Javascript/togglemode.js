@@ -1,16 +1,25 @@
-function toggleMode() {
-    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
-    
-    document.body.classList.add('fade-out');
-    
-    setTimeout(() => {
-      if (currentMode === 'dark-mode') {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
-      } else {
-        document.body.classList.remove('light-mode');
-        document.body.classList.add('dark-mode');
-      }
-      document.body.classList.remove('fade-out');
-    }, 200);
-  }
+
+let darkmode = localStorage.getItem('darkmode');
+
+
+const themeSwitch = document.getElementById('theme-switch');
+
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode');
+  localStorage.setItem('darkmode', 'active');
+};
+
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode');
+  localStorage.setItem('darkmode', null);
+};
+
+if (darkmode === 'active') {
+    enableDarkmode();
+}
+
+
+themeSwitch.addEventListener('click', () => {
+  darkmode = localStorage.getItem('darkmode');
+  darkmode !== 'active' ? enableDarkmode() : disableDarkmode();
+});
