@@ -1,6 +1,3 @@
-title: "[TEACH]"
----
-name: "📌 Task"
 about: "Create a new task, feature, or refactor request"
 assignees: []
 ---
