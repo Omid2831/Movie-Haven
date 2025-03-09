@@ -1,0 +1,34 @@
+.darkmode {
+  background-color: #121212;
+}
+
+#theme-switch {
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgb(166, 171, 175);
+  width: 50px;
+  height: 50px;
+}
+
+#theme-switch img {
+  fill: rgb(21, 20, 20) !important;
+}
+
+/* Initially, only show the light mode icon */
+#theme-switch .dark-mode-icon {
+  display: none;
+}
+
+/* When dark mode is active, hide the light mode icon and show the dark mode icon */
+.darkmode #theme-switch img:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+  display: block;
+}
