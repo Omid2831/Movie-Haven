@@ -1,10 +1,10 @@
 # Movie-Haven 🎥🎥🎥
 
-[![Movie-Haven](src/SRC/src/logs/vOne/imgVersionOne.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
 **Your Ultimate Destination for Movie Enthusiasts**
 
 Movie-Haven is a visually stunning, interactive homepage that offers a seamless experience for movie enthusiasts. With features tailored to enhance accessibility and comfort, our platform is perfect for discovering and exploring the world of films.
+
+[![Movie-Haven](src/SRC/src/logs/vOne/imgVersionOne.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Table of Contents
 
